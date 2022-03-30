@@ -1,0 +1,121 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+$varcolor1: black;
+$varcolor2: rgba(53, 52, 52, 0.781);
+$varcolor3: white;
+$varcolor4: rgb(17, 17, 17);
+
+$varwhidth1: 100%;
+$varwhidth2: 75%;
+$varwhidth3: 50%;
+$varwhidth4: 25%;
+
+.bodycolor {
+  background-color: $varcolor4;
+  color: $varcolor3;
+}
+.header-center {
+  background-color: $varcolor1;
+  height: 300px;
+  width: $varwhidth1;
+  animation: caida 2s ease 0s 1 normal forwards;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: $varcolor3;
+  transition: all 2s;
+}
+.header-center:hover {
+  box-shadow: 0px 0px 10px 0px $varcolor3;
+}
+.nav-link {
+  color: white;
+}
+
+.pf {
+  grid-area: pf;
+}
+.ng {
+  grid-area: ng;
+}
+.na {
+  grid-area: na;
+  margin-top: 5%;
+}
+.header-center {
+  display: grid;
+  grid-template-areas:
+    "pf ng"
+    "na na";
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+}
+@keyframes caida {
+    0% {
+      animation-timing-function: ease-in;
+      opacity: 1;
+      transform: translateY(-45px);
+    }
+  
+    24% {
+      opacity: 1;
+    }
+  
+    40% {
+      animation-timing-function: ease-in;
+      transform: translateY(-24px);
+    }
+  
+    65% {
+      animation-timing-function: ease-in;
+      transform: translateY(-12px);
+    }
+  
+    82% {
+      animation-timing-function: ease-in;
+      transform: translateY(-6px);
+    }
+  
+    93% {
+      animation-timing-function: ease-in;
+      transform: translateY(-4px);
+    }
+  
+    25%,
+    55%,
+    75%,
+    87% {
+      animation-timing-function: ease-out;
+      transform: translateY(0px);
+    }
+  
+    100% {
+      animation-timing-function: ease-out;
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+.colorsection{
+    background-color:$varcolor4 ;
+    width: $varwhidth2;
+    height: 100%;
+    text-align: center;
+    border-top: 2px solid white ;
+    margin: auto;
+}
+.logos-contacto{
+  width: 40px;
+  margin: 5px;
+}
+.alineacion-contacto{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.divRedes{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px;
+}
